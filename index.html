@@ -1,0 +1,728 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Durga Rao's personal portfolio - MCA student, technology enthusiast and aspiring software developer.">
+    <meta name="theme-color" content="#080d18">
+
+    <title>Durga Rao | Personal Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- EmailJS Library -->
+    <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+</head>
+
+<body>
+
+<div class="background-glow"></div>
+
+<!-- HEADER -->
+<header id="header">
+
+    <a href="#home" class="logo">DURGA<span>.</span></a>
+
+    <button class="menu-toggle" id="menuToggle"
+            aria-label="Toggle navigation"
+            aria-expanded="false">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <nav id="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certificates</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+</header>
+
+<!-- HOME -->
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <p class="welcome">
+            <span class="status-dot"></span>
+            WELCOME TO MY DIGITAL WORLD
+        </p>
+
+        <h1>Hi, I'm <span>Durga Rao</span></h1>
+
+        <h2>
+            MCA Student &amp;
+            <span id="typingText">Technology Enthusiast</span>
+        </h2>
+
+        <p class="hero-description">
+            Exploring technology, cybersecurity and software development.
+            Learning new skills, building projects and creating my own digital journey.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#projects" class="btn primary-btn">
+                Explore My Work
+                <i class="fas fa-arrow-right"></i>
+            </a>
+
+            <a href="#contact" class="btn secondary-btn">
+                Contact Me
+            </a>
+
+            <a href="resume.pdf" class="btn secondary-btn" download>
+                <i class="fas fa-download"></i>
+                Download Resume
+            </a>
+
+        </div>
+
+        <div class="social-links">
+
+            <a href="https://www.linkedin.com/in/durgarao/"
+               target="_blank" rel="noopener noreferrer"
+               aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+
+            <a href="https://github.com/durgarao50190-debug"
+               target="_blank" rel="noopener noreferrer"
+               aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+
+            <a href="mailto:durgarao50190@gmail.com"
+               aria-label="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- PROFILE PHOTO -->
+    <div class="hero-visual">
+
+        <div class="profile-circle">
+
+            <img
+                src="./images/profile.jpg"
+                alt="Durga Rao Profile Photo"
+                class="profile-photo"
+                onerror="this.style.display='none'; document.getElementById('profileFallback').style.display='flex';"
+            >
+
+            <div id="profileFallback"
+                 class="profile-initials"
+                 style="display:none;">
+                DR
+            </div>
+
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+
+        </div>
+
+        <div class="floating-tag tag-one">
+            <i class="fas fa-code"></i> Developer
+        </div>
+
+        <div class="floating-tag tag-two">
+            <i class="fas fa-shield-halved"></i> Cybersecurity
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+
+    <div class="section-heading">
+        <p class="section-label">GET TO KNOW ME</p>
+        <h2>About <span>Me</span></h2>
+    </div>
+
+    <div class="about-content">
+
+        <div class="about-card">
+
+            <div class="about-icon">
+                <i class="fas fa-user-astronaut"></i>
+            </div>
+
+            <h3>Who Am I?</h3>
+
+            <p>
+                Hello! I am Durga Rao, a Computer Science graduate
+                currently pursuing MCA at PB Siddhartha College.
+
+                I am interested in software development, cybersecurity,
+                cloud computing and emerging technologies.
+
+                I enjoy exploring new technologies, improving my
+                technical knowledge and building practical projects.
+
+                My goal is to grow as a technology professional
+                and contribute to meaningful projects.
+            </p>
+
+        </div>
+
+        <div class="about-details">
+
+            <div class="detail-box">
+                <i class="fas fa-graduation-cap"></i>
+                <div>
+                    <h4>Education</h4>
+                    <p>MCA - Currently Pursuing</p>
+                </div>
+            </div>
+
+            <div class="detail-box">
+                <i class="fas fa-location-dot"></i>
+                <div>
+                    <h4>Location</h4>
+                    <p>Vijayawada, Andhra Pradesh</p>
+                </div>
+            </div>
+
+            <div class="detail-box">
+                <i class="fas fa-laptop-code"></i>
+                <div>
+                    <h4>Interest</h4>
+                    <p>Technology &amp; Software Development</p>
+                </div>
+            </div>
+
+            <div class="detail-box">
+                <i class="fas fa-rocket"></i>
+                <div>
+                    <h4>Career Goal</h4>
+                    <p>Build a Career in IT</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section">
+
+    <div class="section-heading">
+        <p class="section-label">MY ACADEMIC JOURNEY</p>
+        <h2>My <span>Education</span></h2>
+    </div>
+
+    <div class="education-grid">
+
+        <div class="info-card">
+            <span class="year">Currently Pursuing</span>
+            <i class="fas fa-user-graduate"></i>
+            <h3>Master of Computer Applications</h3>
+            <p>PB Siddhartha College</p>
+            <p>Postgraduate Studies</p>
+        </div>
+
+        <div class="info-card">
+            <span class="year">2026</span>
+            <i class="fas fa-graduation-cap"></i>
+            <h3>B.Sc Computer Science</h3>
+            <p>Nalanda Degree College</p>
+            <strong>70%</strong>
+        </div>
+
+        <div class="info-card">
+            <span class="year">Intermediate</span>
+            <i class="fas fa-book-open"></i>
+            <h3>Intermediate</h3>
+            <p>Narayana Junior College</p>
+            <strong>69%</strong>
+        </div>
+
+        <div class="info-card">
+            <span class="year">SSC</span>
+            <i class="fas fa-school"></i>
+            <h3>Secondary Education</h3>
+            <p>Citizen's High School</p>
+            <strong>90%</strong>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+
+    <div class="section-heading">
+        <p class="section-label">WHAT I KNOW</p>
+        <h2>Technical <span>Skills</span></h2>
+    </div>
+
+    <div class="skills-grid">
+
+        <div class="skill-card">
+            <i class="fas fa-code"></i>
+            <h3>Java</h3>
+            <p>Programming Basics</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fas fa-terminal"></i>
+            <h3>C Programming</h3>
+            <p>Programming Fundamentals</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fas fa-database"></i>
+            <h3>MySQL</h3>
+            <p>Database Fundamentals</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fas fa-shield-halved"></i>
+            <h3>Cybersecurity</h3>
+            <p>Security Fundamentals</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fas fa-cloud"></i>
+            <h3>AWS</h3>
+            <p>Cloud Fundamentals</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fab fa-html5"></i>
+            <h3>HTML &amp; CSS</h3>
+            <p>Web Development Basics</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fas fa-robot"></i>
+            <h3>Blue Prism</h3>
+            <p>Robotic Process Automation</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fas fa-chart-line"></i>
+            <h3>Alteryx</h3>
+            <p>Data Analytics</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="section">
+
+    <div class="section-heading">
+        <p class="section-label">MY ACHIEVEMENTS</p>
+        <h2>My <span>Certifications</span></h2>
+    </div>
+
+    <div class="cert-grid">
+
+        <div class="cert-card">
+            <i class="fas fa-cloud"></i>
+            <h3>AWS Fundamentals</h3>
+            <p>Cloud Computing</p>
+        </div>
+
+        <div class="cert-card">
+            <i class="fas fa-shield-halved"></i>
+            <h3>Cybersecurity</h3>
+            <p>Cybersecurity Fundamentals</p>
+        </div>
+
+        <div class="cert-card">
+            <i class="fas fa-robot"></i>
+            <h3>Blue Prism RPA</h3>
+            <p>Robotic Process Automation</p>
+        </div>
+
+        <div class="cert-card">
+            <i class="fas fa-chart-pie"></i>
+            <h3>Alteryx</h3>
+            <p>Data Analytics</p>
+        </div>
+
+    </div>
+
+    <p class="note">
+        Certificate verification links can be added here later.
+    </p>
+
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+
+    <div class="section-heading">
+        <p class="section-label">WHAT I HAVE BUILT</p>
+        <h2>My <span>Projects</span></h2>
+    </div>
+
+    <div class="project-grid">
+
+        <div class="project-card">
+
+            <div class="project-icon">
+                <i class="fas fa-file-circle-check"></i>
+            </div>
+
+            <div class="project-content">
+
+                <span class="project-type">WEB APPLICATION</span>
+
+                <h3>Complaint Management System</h3>
+
+                <p>
+                    A web-based application designed to manage,
+                    submit and track complaints efficiently.
+                </p>
+
+                <div class="tech-tags">
+                    <span>Java</span>
+                    <span>JSP</span>
+                    <span>Servlets</span>
+                    <span>MySQL</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+
+    <div class="section-heading">
+        <p class="section-label">LET'S CONNECT</p>
+        <h2>Contact <span>Me</span></h2>
+    </div>
+
+    <div class="contact-content">
+
+        <div class="contact-info">
+
+            <h3>Let's Talk!</h3>
+
+            <p>
+                Have an opportunity, project or idea?
+                Feel free to connect with me.
+            </p>
+
+            <div class="contact-item">
+                <i class="fas fa-location-dot"></i>
+                <div>
+                    <h4>Location</h4>
+                    <p>Vijayawada, Andhra Pradesh, India</p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                    <h4>Email</h4>
+                    <a href="mailto:durgarao50190@gmail.com">
+                        durgarao50190@gmail.com
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <i class="fab fa-linkedin"></i>
+                <div>
+                    <h4>LinkedIn</h4>
+                    <a href="https://www.linkedin.com/in/durgarao/"
+                       target="_blank" rel="noopener noreferrer">
+                        Connect on LinkedIn
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <i class="fab fa-github"></i>
+                <div>
+                    <h4>GitHub</h4>
+                    <a href="https://github.com/durgarao50190-debug"
+                       target="_blank" rel="noopener noreferrer">
+                        Explore GitHub
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- EMAILJS CONTACT FORM -->
+        <div class="contact-form">
+
+            <h3>Send a Message</h3>
+
+            <form id="contactForm">
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your Name"
+                    maxlength="100"
+                    required
+                >
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Your Email"
+                    maxlength="150"
+                    required
+                >
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    maxlength="3000"
+                    placeholder="Your Message"
+                    required
+                ></textarea>
+
+                <button type="submit" class="btn primary-btn" id="sendButton">
+                    Send Message
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+
+                <p id="formStatus" role="status" aria-live="polite"></p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+    <a href="#home" class="logo">DURGA<span>.</span></a>
+
+    <p>Designed &amp; Developed by Durga Rao</p>
+
+    <p>© 2026 Durga Rao. All Rights Reserved.</p>
+
+    <a href="#home" class="back-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+</footer>
+
+<!-- JAVASCRIPT -->
+<script>
+
+// MOBILE NAVIGATION
+const menuToggle = document.getElementById("menuToggle");
+const navbar = document.getElementById("navbar");
+
+menuToggle.addEventListener("click", function () {
+
+    navbar.classList.toggle("show");
+
+    const expanded = navbar.classList.contains("show");
+
+    menuToggle.setAttribute("aria-expanded", expanded);
+
+    menuToggle.innerHTML = expanded
+        ? '<i class="fas fa-times"></i>'
+        : '<i class="fas fa-bars"></i>';
+
+});
+
+// CLOSE MENU AFTER CLICK
+document.querySelectorAll("#navbar a").forEach(link => {
+
+    link.addEventListener("click", function () {
+
+        navbar.classList.remove("show");
+
+        menuToggle.setAttribute("aria-expanded", "false");
+
+        menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+
+    });
+
+});
+
+// TYPING ANIMATION
+const words = [
+    "Technology Enthusiast",
+    "MCA Student",
+    "Cybersecurity Learner",
+    "Software Developer"
+];
+
+let wordIndex = 0;
+let charIndex = 0;
+let deleting = false;
+
+const typingText = document.getElementById("typingText");
+
+function typeEffect() {
+
+    const currentWord = words[wordIndex];
+
+    if (deleting) {
+        charIndex--;
+    } else {
+        charIndex++;
+    }
+
+    typingText.textContent = currentWord.substring(0, charIndex);
+
+    let speed = deleting ? 45 : 90;
+
+    if (!deleting && charIndex === currentWord.length) {
+
+        deleting = true;
+        speed = 1400;
+
+    } else if (deleting && charIndex === 0) {
+
+        deleting = false;
+        wordIndex = (wordIndex + 1) % words.length;
+        speed = 400;
+
+    }
+
+    setTimeout(typeEffect, speed);
+
+}
+
+typeEffect();
+
+// EMAILJS INITIALIZATION
+emailjs.init({
+    publicKey: "l2AyEjDd1qLqF1DYO"
+});
+
+// EMAILJS CONTACT FORM
+const contactForm = document.getElementById("contactForm");
+const formStatus = document.getElementById("formStatus");
+const sendButton = document.getElementById("sendButton");
+
+contactForm.addEventListener("submit", async function(event) {
+
+    event.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    if (!name || !email || !message) {
+
+        formStatus.textContent = "Please fill in all fields.";
+        return;
+
+    }
+
+    sendButton.disabled = true;
+
+    sendButton.innerHTML =
+        'Sending... <i class="fas fa-spinner fa-spin"></i>';
+
+    formStatus.textContent = "Sending your message...";
+
+    try {
+
+        await emailjs.send(
+            "service_lyraz4g",
+            "template_yp6awcz",
+            {
+                from_name: name,
+                from_email: email,
+                message: message
+            }
+        );
+
+        formStatus.textContent =
+            "Message sent successfully! Thank you for contacting me.";
+
+        contactForm.reset();
+
+    } catch (error) {
+
+        console.error("EmailJS Error:", error);
+
+        formStatus.textContent =
+            "Message could not be sent. Please try again.";
+
+    } finally {
+
+        sendButton.disabled = false;
+
+        sendButton.innerHTML =
+            'Send Message <i class="fas fa-paper-plane"></i>';
+
+    }
+
+});
+
+// ACTIVE NAVIGATION ON SCROLL
+const sections = document.querySelectorAll("section[id]");
+const navLinks = document.querySelectorAll("#navbar a");
+
+window.addEventListener("scroll", function() {
+
+    let current = "";
+
+    sections.forEach(section => {
+
+        const sectionTop = section.offsetTop - 150;
+
+        if (window.scrollY >= sectionTop) {
+            current = section.getAttribute("id");
+        }
+
+    });
+
+    navLinks.forEach(link => {
+
+        link.classList.remove("active");
+
+        if (link.getAttribute("href") === "#" + current) {
+            link.classList.add("active");
+        }
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>
+```
